@@ -20,10 +20,10 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                FoodActivity tab2 = new FoodActivity();
+                Foods tab2 = new Foods();
                 return tab2;
             case 1:
-            AllergiesActivity tab1 = new AllergiesActivity();
+            Allergies tab1 = new Allergies();
             return tab1;
             default:
                 return null;

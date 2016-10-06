@@ -62,6 +62,14 @@
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="apptheme">Welcome to Moms and Kids. An application to help mothers know the right foods to feed their babies and monitor their growth.</string>
+    <string name="age2">Age(months):</string>
+    <string name="foodss">Foods:</string>
+    <string name="how_too">How to prepare:</string>
+    <string name="details">Additional details:</string>
+    <string name="name_of_allergy">Allergy:</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="foods_to_avoid">Foods to avoid</string>
+    <string name="alternative_foods">Alternative foods</string>
 
 
 </resources>

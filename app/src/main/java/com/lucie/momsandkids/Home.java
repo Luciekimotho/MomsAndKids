@@ -31,8 +31,8 @@ public class Home extends NavigationDrawer implements View.OnClickListener {
         getLayoutInflater().inflate(R.layout.activity_home, layout);
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
 
-        tabLayout.addTab(tabLayout.newTab().setText("FoodActivity"));
-        tabLayout.addTab(tabLayout.newTab().setText("AllergiesActivity"));
+        tabLayout.addTab(tabLayout.newTab().setText("Foods"));
+        tabLayout.addTab(tabLayout.newTab().setText("Allergies"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
 

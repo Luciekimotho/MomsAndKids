@@ -15,52 +15,51 @@ import java.util.List;
  * Created by kamau on 10/4/2016.
  */
 
-public class AllergiesAdapter extends RecyclerView.Adapter<AllergiesAdapter.FoodViewHolder> {
+public class AllergiesAdapter extends RecyclerView.Adapter<AllergiesAdapter.AllergyViewHolder> {
     private Context mContext;
-    private List<Food> foodList;
+    private List<Allergy> allergyList;
 
-    public class FoodViewHolder extends RecyclerView.ViewHolder{
-        public TextView name, age, description, howTo;
-        ImageView foodImage;
+    public class AllergyViewHolder extends RecyclerView.ViewHolder{
+        public TextView allergy, symptoms,to_avoid, alternative;
 
-        public FoodViewHolder(View itemView) {
+        public AllergyViewHolder(View itemView) {
             super(itemView);
-            name = (TextView) itemView.findViewById(R.id.name);
-            age = (TextView) itemView.findViewById(R.id.age);
-            description = (TextView) itemView.findViewById(R.id.descr);
-            howTo = (TextView) itemView.findViewById(R.id.how_to);
-            foodImage = (ImageView) itemView.findViewById(R.id.foodImage);
+            allergy = (TextView) itemView.findViewById(R.id.allergy);
+            symptoms = (TextView) itemView.findViewById(R.id.symptoms);
+            to_avoid = (TextView) itemView.findViewById(R.id.to_avoid);
+            alternative = (TextView) itemView.findViewById(R.id.alternative);
+           // foodImage = (ImageView) itemView.findViewById(R.id.foodImage);
         }
     }
 
-    public AllergiesAdapter(Context mContext2, List<Food> foodList2){
+    public AllergiesAdapter(Context mContext2, List<Allergy> allergyList2){
         this.mContext = mContext2;
-        this.foodList = foodList2;
+        this.allergyList = allergyList2;
     }
 
     @Override
-    public FoodViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public AllergyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.items_card, parent, false);
-        return new FoodViewHolder(itemView);
+                .inflate(R.layout.allergies_card, parent, false);
+        return new AllergyViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(FoodViewHolder holder, int position) {
-        Food food = foodList.get(position);
+    public void onBindViewHolder(AllergyViewHolder holder, int position) {
+        Allergy allergy = allergyList.get(position);
 
-        holder.name.setText(food.getName());
-        holder.description.setText(food.getDescription());
-        holder.age.setText(String.valueOf( food.getAge()));
-        holder.howTo.setText(food.getHowTo());
+        holder.allergy.setText(allergy.getAllergy());
+        holder.symptoms.setText(allergy.getSymptoms());
+        holder.to_avoid.setText(allergy.getToAvoid());
+        holder.alternative.setText(allergy.getAlternative());
 
-        Log.d("Food", ""+food.getName());
+
     }
 
     @Override
     public int getItemCount() {
-        Log.d("Food",""+foodList.size());
-        return foodList.size();
+        Log.d("Food",""+allergyList.size());
+        return allergyList.size();
     }
 
 }

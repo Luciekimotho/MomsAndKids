@@ -29,7 +29,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
             age = (TextView) itemView.findViewById(R.id.age);
             description = (TextView) itemView.findViewById(R.id.descr);
             howTo = (TextView) itemView.findViewById(R.id.how_to);
-            foodImage = (ImageView) itemView.findViewById(R.id.foodImage);
+           // foodImage = (ImageView) itemView.findViewById(R.id.foodImage);
         }
     }
 
@@ -41,7 +41,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
     @Override
     public FoodViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.items_card, parent, false);
+                .inflate(R.layout.food_card, parent, false);
         return new FoodViewHolder(itemView);
     }
 
