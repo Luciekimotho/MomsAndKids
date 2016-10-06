@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "983815117226",
+    "firebase_url": "https://moms-and-kids.firebaseio.com",
+    "project_id": "moms-and-kids",
+    "storage_bucket": "moms-and-kids.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983815117226:android:11e0761feadcae0f",
+        "android_client_info": {
+          "package_name": "com.lucie.momsandkids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983815117226-8qglcu6tgh34qou629np4k0er56d07m3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQyXbuVAqXYyT6FRjIZO7mpqhu9ltXFnE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

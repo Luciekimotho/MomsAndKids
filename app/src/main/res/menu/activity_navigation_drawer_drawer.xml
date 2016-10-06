@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.md.MainActivity" >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawerHome"
+            android:icon="@drawable/home"
+            android:checked="true"
+            android:title="@string/app_name"/>
+        <item
+            android:id="@+id/drawerProfile"
+            android:icon="@drawable/uploads"
+            android:checked="true"
+            android:title="@string/profile"/>
+
+        <item
+            android:id="@+id/drawerRegister"
+            android:icon="@drawable/uploads"
+            android:checked="true"
+            android:title="@string/register"/>
+
+        <item
+            android:id="@+id/drawerAdmin"
+            android:icon="@drawable/uploads"
+            android:checked="true"
+            android:title="@string/foodsandallergies"/>
+
+        <item
+            android:id="@+id/drawerLogout"
+            android:icon="@drawable/logout"
+            android:checked="true"
+            android:title="@string/logout"/>
+    </group>
+
+</menu>
